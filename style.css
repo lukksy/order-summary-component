@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'RedHatDisplay', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #E0E8FF;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.card{
+    width: 327px;
+    height: 567px;
+    background: #FFFFFF;
+    box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.151826);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.card .hd-img{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    display: block;
+}
+
+.card-container{
+    padding: 0 24px;
+}
+
+.card-container .hd-title{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 29px;
+    color: #1F2E55;
+    margin-top: 32px;
+}
+
+.card-container .text{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #717FA6;
+    margin: 16px 0 24px;
+}
+
+.container{
+    width: 100%;
+    height: 81px;
+    background: #F7F9FF;
+    border-radius: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.container .left-side{
+    display: flex;
+    align-items: center;
+}
+
+.left-side .music-icon{
+    margin-right: 20px;
+}
+
+.left-side .annual-plan{
+    font-weight: 900;
+    line-height: 19px;
+    color: #1F2E55;
+}
+
+.left-side .price-year{
+    font-weight: 500;
+    line-height: 19px;
+    color: #717FA6;
+    display: table-row;
+    margin-top: 3px;
+}
+
+.container .change{
+    font-weight: 700;
+    line-height: 17px;
+    font-size: 13px;
+    text-decoration-line: underline;
+    color: #382AE1;
+    cursor: pointer;
+}
+
+.container .change:hover{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #766CF1;
+    text-decoration: none;
+}
+
+.card button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: none;
+    background: #382AE1;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.190291);
+    border-radius: 11px;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    cursor: pointer;
+}
+
+.card button:hover{
+    background: #766CF1;
+}
+
+.card .cancel{
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 20px;
+    color: #717FA6;
+    cursor: pointer;
+}
+
+.card .cancel:hover{
+    color: #1F2E55;
+}
+
+@media  screen and (min-width: 500px){
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: contain;
+    }
+
+    .card{
+        width: 450px;
+        height: 697px;
+    }
+
+    .card-container{
+        padding: 0 48px;
+    }
+
+    .card-container .hd-title{
+        font-size: 28px;
+        margin-top: 32px;
+        line-height: 37px;
+    }
+
+    .card-container .text{
+        font-size: 16px;
+        line-height: 26px;
+        margin: 17px 0 20px;
+    }
+
+    .container{
+        height: 98px;
+        padding: 24px 39px 24px 24px;
+        margin-bottom: 32px;
+    }
+
+    .left-side .annual-plan{
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
+    .left-side .price-year{
+        font-size: 16px;
+        line-height: 21px;
+        margin-top: 6px;
+    }
+    
+    .container .change{
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .card-container button{
+        margin-bottom: 32px;
+    }
+}
